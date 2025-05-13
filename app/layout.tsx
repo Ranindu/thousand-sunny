@@ -7,7 +7,7 @@ const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${APP_NAME}`,
+    template: `%s | ${APP_NAME}`, // %s will be replaced with the page title
     default: APP_NAME,
   },
   description: APP_DESCRIPTION,
@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${inter.className} antialiased`}>
+        className={`${inter.className} h-full antialiased`}>
         {children}
       </body>
     </html>
