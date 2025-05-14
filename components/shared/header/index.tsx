@@ -28,7 +28,7 @@ const Header = () => {
                         <ShoppingCart /> Cart
                     </Link>
                 </Button>
-                <Button asChild variant='ghost'>
+                <Button asChild>
                     <Link href="/login">
                         <UserIcon /> Login
                     </Link>
