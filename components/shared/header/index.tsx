@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { APP_NAME } from '@/lib/constants';
+import ThemeToggle from './theme-toggle';
 
 const Header = () => {
     return <header className='w-full border-b'>
@@ -23,6 +24,7 @@ const Header = () => {
                 </Link>
             </div>
             <div className='space-x-2'>
+                <ThemeToggle />
                 <Button asChild variant='ghost'>
                     <Link href="/cart">
                         <ShoppingCart /> Cart
